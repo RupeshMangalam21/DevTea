@@ -1,0 +1,90 @@
+{
+  "name": "devtea-chat",
+  "version": "1.0.0",
+  "description": "A comprehensive real-time chat platform designed for developers",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "setup": "node scripts/setup.js",
+    "post-setup": "node scripts/post-install.js",
+    "verify": "node scripts/verify.js",
+    "security-fix": "node scripts/fix-vulnerabilities.js",
+    "clean": "rm -rf .next out dist",
+    "analyze": "cross-env ANALYZE=true next build",
+    "fresh-install": "npm run clean && rm -rf node_modules package-lock.json && npm install",
+    "update-deps": "npm update && npm audit fix"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.5",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.294.0",
+    "next": "^14.2.29",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.29",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^14.2.29",
+    "postcss": "^8.4.31",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/devtea-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "real-time",
+    "websocket",
+    "nextjs",
+    "typescript",
+    "developers",
+    "messaging",
+    "react"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://your-website.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/devtea-chat/issues"
+  },
+  "homepage": "https://devtea-chat.vercel.app"
+}
